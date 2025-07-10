@@ -1,0 +1,713 @@
+*{
+    margin: auto 0;
+   
+}
+.container{
+    font-family: 'myfont';
+    height: auto;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url(font/Rubik-Regular.ttf);
+}
+.navbar{
+    height: 64px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed; 
+    align-content: center;
+    display: flex;
+    z-index: 3;
+
+}
+
+
+.goibibo-image{
+    margin-left: 180px;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.goibibo-image img{
+    width: 106px;
+    height: 33px;
+}
+
+.left-navbar{
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    color: #777777;
+    gap: 35px;
+   
+}
+
+.left-navbar .active{
+    border-bottom: #2276E3 4px solid;
+    padding-bottom: 19px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding-top: 10px;
+    height: 64px;
+
+}
+
+.icons{
+    cursor: pointer;
+}
+
+.icons img{
+    width: 32px;
+    height: 18px;
+    margin-left: 10px;
+    
+  
+}
+
+#cabsandbus {
+    margin-left: 1px;
+
+}
+
+#insurance{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.right-navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+
+}
+
+.booking{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.imgbooking{
+    display: flex;
+
+}
+
+.booking img{
+    width: 22px;
+    height: 22px;
+    padding-right: 10px;
+}
+.manage{
+    color: #46484D;
+    font-size: 12px;
+    margin-top: 0px;
+}
+.trips{
+    font-size: 14px;
+    color: #333;
+    margin-top: -19px;
+}
+.signup{
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(34, 118, 227);
+    padding: 5px 10px;
+    display: flex;
+    border: 1px solid;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.signup img{
+     width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+.bgimage{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+}
+.backgroundtext{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 86px;
+    padding-right: 10px;
+}
+.firstcolumn{
+    width: 1200px;
+    height: 323px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.radio {
+    padding: 20px ;
+    display: flex;
+   
+    
+}
+
+.radio div{
+    margin-left: 10px; 
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    width: 110px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.radio p{
+    margin-left: 10px;
+     font-size: 16px;
+    font-weight: bold; 
+    color: #777777;
+
+}
+
+.radio .active{
+    background-color: #E8F1FC;
+    
+}
+.radio .active p{
+   color: #2276E3;
+}
+ 
+.fromto{
+    display: flex;
+    position: relative;
+    
+}
+.frominput{
+    
+    width: 254px;
+    height: 70px;
+    border: 2px solid rgb(225, 231, 238);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(176, 176, 176);
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.frominput:hover{
+    border-color: rgb(34, 32, 32);
+}
+
+input::placeholder{
+    color: rgb(176, 176, 176);
+    margin-right: 75px;
+}
+
+.from{
+    margin-left: 30px;
+}
+
+.to{
+    margin-left:10px;
+}
+
+.fromtext{
+    width: 37px;
+    padding-left: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(119, 119, 119);
+    position: absolute;
+    background-color: white;
+    margin-top: 11px;
+}
+
+.sync{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    border-radius: 12px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    top: 38px;
+    left: 275px;
+    cursor: pointer;
+    
+}
+
+.totext{
+    width: 21px;
+    padding-left: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(119, 119, 119);
+    position: absolute;
+    background-color: white;
+    margin-top: 11px;
+}
+
+.departurediv{
+    width: 140px;
+    height: 73px;
+    border: 2px solid rgb(225, 231, 238);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.departurediv:hover{
+     border-color: rgb(34, 32, 32);
+}
+
+#thursday{
+   font-size: 12px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    margin-top: -20px;
+    margin-right: 55px;
+}
+.departurediv img{
+    margin-top: 10px;
+}
+#returntext{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(113, 113, 113);
+    margin-top: 10px;
+}
+
+.departurelabel{
+     width: 71px;
+    padding-left: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(119, 119, 119);
+    position: absolute;
+    background-color: white;
+    margin-top: 11px;
+}
+
+.returnlabel{
+    width: 50px;
+    padding-left: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(119, 119, 119);
+    position: absolute;
+    background-color: white;
+    margin-top: 11px
+}
+
+.travellersdiv{
+    width: 300px;
+    height: 73px;
+    border: 2px solid rgb(225, 231, 238);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.travellersdiv:hover{
+     border-color: rgb(34, 32, 32);
+}
+#economy{
+   font-size: 12px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    margin-top: -20px;
+    margin-right: 210px;
+    
+}
+.travellersdiv img{
+    margin-top: 10px;
+}
+.travellerslabel{
+     width: 118px;
+    padding-left: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(119, 119, 119);
+    position: absolute;
+    background-color: white;
+    margin-top: 11px;
+}
+.travellersdiv p{
+    margin-right: 180px;
+}
+
+
+.checkboxmain{
+    background: linear-gradient(to right , #EAFCF3 , white);
+    width: 1152px;
+    height: 74px;
+    margin: 30px;
+    display: flex;
+    
+}
+.morediv span{
+    background: linear-gradient(to right , #8334F3 , #4140FE);
+    border-radius: 33px;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 22px ;
+    padding: 3px 10px;
+    color: white;
+}
+.morediv p{
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.student{
+    width: 215px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(225, 231, 238);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.checkboxdiv{
+    display: flex;
+    gap: 10px;
+
+}
+.student img{
+    width: 32px;
+    height: 32px;
+   
+}
+
+.student input[type="checkbox"] {
+  transform: scale(1.7);
+  transform-origin: top left;
+  margin: 0px 13px;
+  
+}
+.student p{
+    color: #837171;
+}
+.mainsearch{
+    display: flex;
+    justify-content: center;
+}
+.search{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 109, 56);
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.search:hover{
+    background: #EB6125;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    cursor: pointer;
+    position: fixed;
+    margin-left: 1360px;
+}
+.sidebardiv{
+    width: 160px;
+    height: 37px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+    border-radius: 20px ;
+    position: relative;
+    transform: rotate(-90deg);
+    text-align: center;
+    right: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+.hoverdiv{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    border-radius: 20px ;
+    z-index: -1;
+    display: flex;
+    justify-content: start;
+    right: -15px;
+    
+}
+
+.sidebar:hover .hoverdiv{
+  right: 20px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: -0s;
+}
+
+.secondmain{
+    width: 1200px;
+    height: 470px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(119, 119, 119, 0.2) 0px 2px 8px;
+    border-radius: 20px;
+    margin: 35px auto;
+    
+
+}
+
+.banner{
+    
+     width: 1200px;
+    height: 295px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(119, 119, 119, 0.2) 0px 2px 8px;
+    border-radius: 20px;
+    margin: auto;
+
+}
+.offerstext{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(34, 34, 34);
+    padding-top: 25px;
+}
+.alldiv{
+    font-size: 14px;
+    background: #FFFFFF;
+    font-weight: 500;
+    width: 58px;
+    height: 45px;
+    border: 2px solid rgb(225, 231, 238);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+
+.allmain{
+    display: flex;
+    gap: 10px;
+    margin-top: 35px;
+    margin-left: 30px;
+
+}
+
+#all{
+    color: rgb(34, 118, 227);
+    border: 1px solid rgb(34, 118, 227);
+    background-color: #E5F3FF;
+}
+
+#bank{
+    width: 120px;
+}
+
+#flights{
+    width: 86px;
+}
+
+#hotel{
+    width: 83px;
+}
+
+#trains{
+    width: 80px;
+}
+
+.leftmain{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.view{
+    display: flex;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(34, 118, 227);
+    cursor: pointer;
+
+}
+.view img{
+    width: 20px;
+    height: 20px;
+    padding-left: 7px;
+}
+
+.ad{
+    width: 360px;
+    height: 288px;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.ad:hover{
+    box-shadow: rgba(119, 119, 119, 0.2) 5px 5px 8px,rgba(119, 119, 119, 0.2) 1px 0px 8px inset;
+}
+
+.admain{
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.ad img{
+    width: 330px;
+    height: 167px;
+    border-radius: 10px;
+}
+
+#calender{
+    height: 16px;
+    width: 16px;
+}
+.ad p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(113, 113, 113);
+    padding: 5px 0px;
+
+}
+.calendermain{
+     font-size: 14px;
+    font-weight: 400;
+    color: rgb(113, 113, 113);
+    padding: 5px 0px;
+}
+
+.explore{
+    width: 360px ;
+    height: 288px;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 13px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explore img{
+    width: 124px;
+    height: 124px;
+}
+.explore p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.explore >div{
+    width: 140px;
+    height: 44px;
+    border: 1px solid rgb(34, 118, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: rgb(34, 118, 227);
+    cursor: pointer;
+}
+
+.arrowdiv{
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 9px 0px;
+    border: 1px solid rgb(225, 231, 238);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 125px;
+    bottom: -110px;
+}
+
+.arrowdiv img{
+    width: 29px;
+    height: 29px;
+}
+
+.arrowdiv:hover{
+    scale: 1.1;
+    transition: 0.2s ease-out;
+}
+.suitcasebanner{
+    width: 240px;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 9px 0px;
+    border: 1px solid rgb(225, 231, 238);
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #777777;
+    top: 64px;
+    right: 310px;
+    display: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.booking:hover .suitcasebanner{
+    display: flex;
+
+}
